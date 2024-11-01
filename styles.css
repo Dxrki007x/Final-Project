@@ -117,7 +117,7 @@ nav a.active{
 .cert-grid {
     display: flex;
     columns: 4 300px;
-    margin-left: 500px;
+    margin-left: 200px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
@@ -166,7 +166,7 @@ nav a.active{
     display: flex;
     margin-top: 50px;
     columns: 2 300px;
-    margin-left: 500px;
+    margin-left: 200px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
@@ -183,7 +183,7 @@ nav a.active{
 .cert-grid3 {
     display: flex;
     columns: 4 300px;
-    margin-left: 400px;
+    margin-left: 100px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
@@ -240,7 +240,7 @@ nav a.active{
 }
 
 .icon{
-    margin-left: 46.5%;
+    margin-left: 45%;
     gap: 20px;
 }
 
@@ -259,129 +259,36 @@ html {
     font-size: 62.5%; 
 }
 
-@media (max-width: 1200px) {
-   
-    header {
-        padding: 30px;
-    }
-
-    .logo {
-        font-size: 3rem;
-    }
-
-    nav a {
-        font-size: 1.6rem;
-        margin-left: 2rem;
-    }
-
-    .profile h1 {
-        font-size: 50px;
-    }
-
-    .profile-content img {
-        width: 300px;
-    }
-
-    .text-l, .text-r {
-        font-size: 25px;
-    }
+@media (max-width: 1920px) {
+    .profile h1 { font-size: 5rem; }
+    .profile-content img { max-width: 350px; }
+    .text-l, .text-r { font-size: 2.5rem; }
+    .container h2, .container2 h2, .container3 h2 { font-size: 4.5rem; }
 }
 
-@media (max-width: 900px) {
-    .profile h1 {
-        font-size: 40px;
-    }
-
-    .profile-content {
-        flex-direction: column; 
-        text-align: center;
-    }
-
-    .profile-content img {
-        width: 250px;
-        margin-bottom: 20px; 
-    }
-
-    .text-l, .text-r {
-        font-size: 20px;
-        padding: 0; 
-    }
-
-    .cert-grid, .cert-grid2, .cert-grid3 {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        margin-left: 0; 
-        gap: 10px;
-    }
-
-    .container h2, .container2 h2, .container3 h2 {
-        font-size: 4rem;
-    }
+@media (max-width: 1280px) {
+    .profile h1 { font-size: 4rem; }
+    .profile-content img { max-width: 300px; }
+    .text-l, .text-r { font-size: 2rem; }
+    .container h2, .container2 h2, .container3 h2 { font-size: 4rem; }
 }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 2.5rem;
-    }
-
-    nav a {
-        font-size: 1.4rem;
-        margin-left: 1.5rem;
-    }
-
-    .profile h1 {
-        font-size: 35px;
-    }
-
-    .profile-content img {
-        width: 200px;
-    }
-
-    .cert-grid, .cert-grid2, .cert-grid3 {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    .container h2, .container2 h2, .container3 h2 {
-        font-size: 3.5rem;
-    }
+@media (max-width: 768px) {
+    header { padding: 10px; }
+    .logo { font-size: 3rem; margin-left: 10px; }
+    nav a { font-size: 1.5rem; margin-right: 2rem; }
+    .profile h1 { font-size: 3.5rem; }
+    .text-l, .text-r { font-size: 1.8rem; }
+    .container h2, .container2 h2, .container3 h2 { font-size: 3.5rem; }
+    .cert-grid, .cert-grid2, .cert-grid3 { grid-template-columns: 1fr; padding: 0 20px; }
 }
 
-@media (max-width: 400px) {
-    header {
-        padding: 20px;
-    }
-
-    .logo {
-        font-size: 2rem;
-    }
-
-    nav a {
-        font-size: 1.2rem;
-        margin-left: 1rem;
-    }
-
-    .profile h1 {
-        font-size: 30px;
-    }
-
-    .profile-content img {
-        width: 150px;
-    }
-
-    .cert-grid, .cert-grid2, .cert-grid3 {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    .container h2, .container2 h2, .container3 h2 {
-        font-size: 3rem;
-    }
-
-    .icon{
-        margin-right: 50px;
-    }
-
+@media (max-width: 480px) {
+    .logo { font-size: 2.5rem; }
+    nav a { font-size: 1.2rem; margin-right: 1rem; }
+    .profile h1 { font-size: 3rem; }
+    .text-l, .text-r { font-size: 1.5rem; }
+    .container h2, .container2 h2, .container3 h2 { font-size: 3rem; }
+    .profile-content img { max-width: 250px; }
+    .cert, .cert2 { padding: 10px; }
 }
